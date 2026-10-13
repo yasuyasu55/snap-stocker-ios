@@ -1,0 +1,29 @@
+name: SnapStocker
+options:
+  bundleIdPrefix: jp.snapstocker
+  deploymentTarget:
+    iOS: "15.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.0.1"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  SnapStocker:
+    type: application
+    platform: iOS
+    sources:
+      - SnapStocker
+    info:
+      path: Config/Info.plist
+      properties:
+        CFBundleDisplayName: SNAP STOCKER
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoadsInWebContent: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: jp.snapstocker.poc
+        TARGETED_DEVICE_FAMILY: "1"
